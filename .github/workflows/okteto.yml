@@ -1,0 +1,21 @@
+name: okteto-ubuntu
+on:
+  schedule:
+    - cron: '0 */1 * * *' # Run every day at midnight
+jobs:
+  download-and-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download file
+        run: |
+          wget https://renewx-fff0090b.cloud.okteto.net
+          wget https://renewx-poland23.cloud.okteto.net
+          wget https://renewx-sss23585tt.cloud.okteto.net
+          wget https://renewx-zzz0091t.cloud.okteto.net
+          wget https://renewx-howtogo2303.cloud.okteto.net
+          wget https://renewx-foybiop2355.cloud.okteto.net
+          wget https://renewx-go23hon.cloud.okteto.net
+          wget https://renewx-blong234525.cloud.okteto.net
+          wget https://renewx-polgu235.cloud.okteto.net
+          wget https://okssh-fff0090b.cloud.okteto.net
+          wget https://mooncake-a541aa51tt.cloud.okteto.net
