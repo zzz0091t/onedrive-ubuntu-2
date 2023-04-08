@@ -1,0 +1,34 @@
+name: w518-ubuntu
+on:
+  schedule:
+    - cron: '53 * * * *' # Run every day at midnight
+jobs:
+  download-and-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download file
+        run: |
+          wget https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/amd64/linux/OneDriveUploader -P /usr/local/bin/
+          wget https://koyebtt.alwaysdata.net/land518/main/land518.json
+          chmod +x /usr/local/bin/OneDriveUploader
+          mkdir mainn
+          cp *.* mainn
+          OneDriveUploader -c land518.json -s "mainn"
+          wget -r -np -nd -A json https://koyebtt.alwaysdata.net/land518/main/
+      - name: Run file
+        run: |
+          wget -nH -m --ftp-user=zzz0091 --ftp-password=ftpftpA## ftp://ftp-zzz0091.alwaysdata.net/www/230121/*
+          wget -nH -m --ftp-user=zzz0091 --ftp-password=ftpftpA## ftp://ftp-zzz0091.alwaysdata.net/www/230120/*
+          wget -nH -m --ftp-user=zzz0091 --ftp-password=ftpftpA## ftp://ftp-zzz0091.alwaysdata.net/www/230119/*
+          cp www/230121/*.* mainn
+          cp www/230120/*.* mainn
+          cp www/230119/*.* mainn
+          cp *.* mainn
+          wget -O land518.json https://koyebtt.alwaysdata.net/land518/mainn/land518.json
+          OneDriveUploader -c land518.json -s "mainn"
+          
+          
+          
+          
+
+    
