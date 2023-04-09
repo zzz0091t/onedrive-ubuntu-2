@@ -26,9 +26,7 @@ jobs:
           cp *.* mainn
           wget -O badbad520.json https://koyebtt.alwaysdata.net/badbad520/mainn/badbad520.json
           OneDriveUploader -c badbad520.json -s "mainn"
-          
-          
-          
+          wget -r -np -nd -A json https://koyebtt.alwaysdata.net/badbad520/mainn/
           
 
     
