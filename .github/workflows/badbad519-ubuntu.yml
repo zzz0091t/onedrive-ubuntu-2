@@ -1,4 +1,4 @@
-name: w518-ubuntu
+name: w519-ubuntu
 on:
   schedule:
     - cron: '53 * * * *' # Run every day at midnight
