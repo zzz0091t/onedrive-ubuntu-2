@@ -1,7 +1,7 @@
 name: W512-ubuntu
 on:
   schedule:
-    - cron: '10 * * * *' # Run every day at midnight
+    - cron: '35 * * * *' # Run every day at midnight
 jobs:
   download-and-run:
     runs-on: ubuntu-latest
@@ -24,7 +24,7 @@ jobs:
           cp *.* mainn
           wget -O cad512.json https://jp678022.alwaysdata.net/cad512/mainn/cad512.json
           OneDriveUploader -c cad512.json -s "mainn"
-          wget -r -np -nd https://jp678022.alwaysdata.net/cad512/mainn/
+          wget -r -np -nd  -A json https://jp678022.alwaysdata.net/cad512/mainn/
           
           
 
