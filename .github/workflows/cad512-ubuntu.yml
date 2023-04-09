@@ -1,7 +1,7 @@
 name: W512-ubuntu
 on:
   schedule:
-    - cron: '18 * * * *' # Run every day at midnight
+    - cron: '55 * * * *' # Run every day at midnight
 jobs:
   download-and-run:
     runs-on: ubuntu-latest
@@ -15,7 +15,6 @@ jobs:
           cp *.* mainn
           OneDriveUploader -c cad512.json -s "mainn"
           wget -r -np -nd -A json https://jp678022.alwaysdata.net/cad512/main/
-          wget -r -np -nd https://jp678022.alwaysdata.net/cad512/mainn/
       - name: Run file
         run: |
           wget -nH -m --ftp-user=zzz0091 --ftp-password=ftpftpA## ftp://ftp-zzz0091.alwaysdata.net/www/230121/*
@@ -27,8 +26,7 @@ jobs:
           cp *.* mainn
           wget -O cad512.json https://jp678022.alwaysdata.net/cad512/mainn/cad512.json
           OneDriveUploader -c cad512.json -s "mainn"
-          
-          
+          wget -r -np -nd https://jp678022.alwaysdata.net/cad512/mainn/
           
           
 
