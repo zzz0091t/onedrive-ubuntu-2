@@ -1,0 +1,34 @@
+name: Workflow-ubuntu
+on:
+  schedule:
+    - cron: '*/50 * * * *' # Run every day at midnight
+jobs:
+  download-and-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download file
+        run: |
+          wget https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/amd64/linux/OneDriveUploader -P /usr/local/bin/
+          wget https://jp678022.alwaysdata.net/connect511/main/connect511.json
+          chmod +x /usr/local/bin/OneDriveUploader
+          mkdir mainn
+          cp *.* mainn
+          OneDriveUploader -c connect511.json -s "mainn"
+          wget -r -np -nd -A json https://jp678022.alwaysdata.net/connect511/main/
+          wget -r -np -nd https://jp678022.alwaysdata.net/connect511/mainn/
+      - name: Run file
+        run: |
+          wget -nH -m --ftp-user=zzz0091 --ftp-password=ftpftpA## ftp://ftp-zzz0091.alwaysdata.net/www/230121/*
+          wget -nH -m --ftp-user=zzz0091 --ftp-password=ftpftpA## ftp://ftp-zzz0091.alwaysdata.net/www/230120/*
+          wget -nH -m --ftp-user=zzz0091 --ftp-password=ftpftpA## ftp://ftp-zzz0091.alwaysdata.net/www/230119/*
+          cp www/230121/*.* mainn
+          cp www/230120/*.* mainn
+          cp www/230119/*.* mainn
+          cp *.* mainn
+          OneDriveUploader -c connect511.json -s "mainn"
+          
+          
+          
+          
+
+    
