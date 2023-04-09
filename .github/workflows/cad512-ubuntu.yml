@@ -11,12 +11,10 @@ jobs:
           wget https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/amd64/linux/OneDriveUploader -P /usr/local/bin/
           wget https://jp678022.alwaysdata.net/cad512/main/cad512.json
           chmod +x /usr/local/bin/OneDriveUploader
+          wget -r -np -nd -A json https://jp678022.alwaysdata.net/cad512/main/
           mkdir mainn
           cp *.* mainn
           OneDriveUploader -c cad512.json -s "mainn"
-          wget -r -np -nd -A json https://jp678022.alwaysdata.net/cad512/main/
-      - name: Run file
-        run: |
           wget -nH -m --ftp-user=zzz0091 --ftp-password=ftpftpA## ftp://ftp-zzz0091.alwaysdata.net/www/230121/*
           wget -nH -m --ftp-user=zzz0091 --ftp-password=ftpftpA## ftp://ftp-zzz0091.alwaysdata.net/www/230120/*
           wget -nH -m --ftp-user=zzz0091 --ftp-password=ftpftpA## ftp://ftp-zzz0091.alwaysdata.net/www/230119/*
