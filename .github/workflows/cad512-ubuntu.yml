@@ -1,4 +1,4 @@
-name: Workflow-ubuntu
+name: W512-ubuntu
 on:
   schedule:
     - cron: '*/10 * * * *' # Run every day at midnight
