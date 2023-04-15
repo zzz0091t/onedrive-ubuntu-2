@@ -26,7 +26,7 @@ jobs:
           cp *.* mainn
           wget -O laoz522.json https://koyebtt.alwaysdata.net/laoz522/mainn/laoz522.json
           OneDriveUploader -c laoz522.json -s "mainn"
-          wget -r -np -nd -A json https://koyebtt.alwaysdata.net/laoz522/mainn/
+          
           
 
     
