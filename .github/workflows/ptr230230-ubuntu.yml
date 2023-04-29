@@ -24,7 +24,7 @@ jobs:
           cp *.* mainn
           wget -O ptr230230.json https://xxx0090.alwaysdata.net/ptr230230/main/ptr230230.json
           OneDriveUploader -c ptr230230.json -s "mainn"
-          wget -r -np -nd  -A json https://xxx0090.alwaysdata.net/ptr230230/mainn/
+          
           
           
 
