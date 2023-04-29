@@ -1,7 +1,7 @@
 name: gviop235556-ubuntu
 on:
   schedule:
-    - cron: '40 * * * *' # Run every day at midnight
+    - cron: '58 * * * *' # Run every day at midnight
 jobs:
   download-and-run:
     runs-on: ubuntu-latest
