@@ -9,7 +9,7 @@ jobs:
       - name: Download file
         run: |
           wget https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/amd64/linux/OneDriveUploader -P /usr/local/bin/
-          wget https://jp678022.alwaysdata.net/read601/main/read601.json
+          wget https://xxx0090.alwaysdata.net/read601/main/read601.json
           chmod +x /usr/local/bin/OneDriveUploader
           wget -r -np -nd -A json https://xxx0090.alwaysdata.net/read601/main/
           mkdir mainn
@@ -24,7 +24,7 @@ jobs:
           cp *.* mainn
           wget -O read601.json https://jp678022.alwaysdata.net/read601/mainn/read601.json
           OneDriveUploader -c read601.json -s "mainn"
-          wget -r -np -nd  -A json https://jp678022.alwaysdata.net/read601/mainn/
+          wget -r -np -nd  -A json https://xxx0090.alwaysdata.net/read601/mainn/
           
           
 
