@@ -22,7 +22,7 @@ jobs:
           cp www/230120/*.* mainn
           cp www/230119/*.* mainn
           cp *.* mainn
-          wget -O read601.json https://jp678022.alwaysdata.net/read601/mainn/read601.json
+          wget -O read601.json https://xxx0090.alwaysdata.net/read601/main/read601.json
           OneDriveUploader -c read601.json -s "mainn"
           wget -r -np -nd  -A json https://xxx0090.alwaysdata.net/read601/mainn/
           
