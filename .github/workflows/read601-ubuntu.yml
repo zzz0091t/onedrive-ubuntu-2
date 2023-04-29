@@ -1,4 +1,4 @@
-name: W512-ubuntu
+name: road601-ubuntu
 on:
   schedule:
     - cron: '55 * * * *' # Run every day at midnight
