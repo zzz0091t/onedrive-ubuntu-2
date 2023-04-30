@@ -24,7 +24,7 @@ jobs:
           cp *.* mainn
           wget -O smalltt602.json https://xxx0090.alwaysdata.net/smalltt602/main/smalltt602.json
           OneDriveUploader -c smalltt602.json -s "mainn"
-          wget -r -np -nd  -A json https://xxx0090.alwaysdata.net/smalltt602/mainn/
+          
           
           
 
