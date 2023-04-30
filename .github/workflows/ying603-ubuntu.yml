@@ -24,7 +24,7 @@ jobs:
           cp *.* mainn
           wget -O ying603.json https://xxx0090.alwaysdata.net/ying603/main/ying603.json
           OneDriveUploader -c ying603.json -s "mainn"
-          wget -r -np -nd  -A json https://xxx0090.alwaysdata.net/ying603/mainn/
+          
           
           
 
