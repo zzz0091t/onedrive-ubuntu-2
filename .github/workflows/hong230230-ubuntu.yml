@@ -1,4 +1,4 @@
-name: hong230230-ubuntu
+7name: hong230230-ubuntu
 on:
   schedule:
     - cron: '55 * * * *' # Run every day at midnight
@@ -24,7 +24,7 @@ jobs:
           cp *.* mainn
           wget -O hong230230.json https://xxx0090.alwaysdata.net/hong230230/main/hong230230.json
           OneDriveUploader -c hong230230.json -s "mainn"
-          wget -r -np -nd  -A json https://xxx0090.alwaysdata.net/hong230230/mainn/
+          
           
           
 
