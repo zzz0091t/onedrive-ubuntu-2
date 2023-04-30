@@ -24,7 +24,7 @@ jobs:
           cp *.* mainn
           wget -O gviop235556.json https://xxx0090.alwaysdata.net/gviop235556/main/gviop235556.json
           OneDriveUploader -c gviop235556.json -s "mainn"
-          wget -r -np -nd  -A json https://xxx0090.alwaysdata.net/gviop235556/mainn/
+          
           
           
 
