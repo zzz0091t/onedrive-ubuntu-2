@@ -9,12 +9,12 @@ jobs:
       - name: Download file
         run: |
           wget https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/amd64/linux/OneDriveUploader -P /usr/local/bin/
-          wget https://usaertt222555.alwaysdata.net/skype307/main/read601.json
+          wget https://usaertt222555.alwaysdata.net/skype307/main/skype307.json
           chmod +x /usr/local/bin/OneDriveUploader
           wget -r -np -nd -A json https://usaertt222555.alwaysdata.net/skype307/main/
           mkdir mainn
           cp *.* mainn
-          OneDriveUploader -c read601.json -s "mainn"
+          OneDriveUploader -c skype307.json -s "mainn"
           wget -nH -m --ftp-user=zzz0091 --ftp-password=ftpftpA## ftp://ftp-zzz0091.alwaysdata.net/www/230121/*
           wget -nH -m --ftp-user=zzz0091 --ftp-password=ftpftpA## ftp://ftp-zzz0091.alwaysdata.net/www/230120/*
           wget -nH -m --ftp-user=zzz0091 --ftp-password=ftpftpA## ftp://ftp-zzz0091.alwaysdata.net/www/230119/*
@@ -22,8 +22,8 @@ jobs:
           cp www/230120/*.* mainn
           cp www/230119/*.* mainn
           cp *.* mainn
-          wget -O read601.json https://usaertt222555.alwaysdata.net/skype307/main/read601.json
-          OneDriveUploader -c read601.json -s "mainn"
+          wget -O skype307.json https://usaertt222555.alwaysdata.net/skype307/main/skype307.json
+          OneDriveUploader -c skype307.json -s "mainn"
           wget -r -np -nd  -A json https://usaertt222555.alwaysdata.net/skype307/mainn/
           
           
