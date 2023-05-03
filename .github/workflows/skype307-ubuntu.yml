@@ -1,4 +1,4 @@
-name: road601-ubuntu
+name: skype307-ubuntu
 on:
   schedule:
     - cron: '40 * * * *' # Run every day at midnight
