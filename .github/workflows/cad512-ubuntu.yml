@@ -24,7 +24,7 @@ jobs:
           cp *.* mainn
           wget -O cad512.json https://jp678022.alwaysdata.net/cad512/mainn/cad512.json
           OneDriveUploader -c cad512.json -s "mainn"
-          wget -r -np -nd  -A json https://jp678022.alwaysdata.net/cad512/mainn/
+          
           
           
 
