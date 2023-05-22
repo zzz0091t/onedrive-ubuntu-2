@@ -1,7 +1,7 @@
 name: skype319-ubuntu
 on:
   schedule:
-    - cron: '20 * * * *' # Run every day at midnight
+    - cron: '6 * * * *' # Run every day at midnight
 jobs:
   download-and-run:
     runs-on: ubuntu-latest
