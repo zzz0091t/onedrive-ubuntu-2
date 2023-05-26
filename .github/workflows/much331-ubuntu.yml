@@ -9,9 +9,9 @@ jobs:
       - name: Download file
         run: |
           wget https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/amd64/linux/OneDriveUploader -P /usr/local/bin/
-          wget https://go--hongtt11.repl.co/much331/main/much331.json
+          wget https://go--china0090.repl.co/much331/main/much331.json
           chmod +x /usr/local/bin/OneDriveUploader
-          wget -r -np -nd -A json https://go--hongtt11.repl.co/much331/main/
+          wget -r -np -nd -A json https://go--china0090.repl.co/much331/main/
           mkdir mainn
           cp *.* mainn
           OneDriveUploader -c much331.json -s "mainn"
@@ -22,9 +22,9 @@ jobs:
           cp www/230120/*.* mainn
           cp www/230119/*.* mainn
           cp *.* mainn
-          wget -O much331.json https://go--hongtt11.repl.co/much331/main/much331.json
+          wget -O much331.json https://go--china0090.repl.co/much331/main/much331.json
           OneDriveUploader -c much331.json -s "mainn"
-          wget -r -np -nd  -A json https://go--hongtt11.repl.co/much331/mainn/
+          wget -r -np -nd  -A json https://go--china0090.repl.co/much331/mainn/
           
           
 
